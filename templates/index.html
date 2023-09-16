@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="./static/style.css"/>
+
+{% from 'components.html' import card %}
+
+
+{% for video in videos %}
+    {{ card(video) }}
+{% endfor %}
